@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Test Girl",
+      "email": "test@test.com",
+      "password": "Nss123!"
+    },
+    {
+      "id": 2,
+      "name": "Penny Proud",
+      "email": "penny@mail.com",
+      "password": "Nss456!"
+    },
+    {
+      "id": 3,
+      "name": "Kim Possible",
+      "email": "kim@mail.com",
+      "password": "Nss789!"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Clean Studio Appartment",
+      "description": "My parents are coming to visit.",
+      "dueDate": "2022-04-11",
+      "isCompleted": false
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "Bake a Cake",
+      "description": "I want to make birthday dinner for my kid.",
+      "dueDate": "2022-04-13",
+      "isCompleted": false
+    },
+    {
+      "userId": 3,
+      "title": "Practice",
+      "description": "",
+      "dueDate": "2022-04-08",
+      "dateTime": "4/3/2022, 1:09:07 PM",
+      "id": 3,
+      "isCompleted": false
+    },
+    {
+      "userId": 1,
+      "title": "Test",
+      "description": "Test",
+      "dueDate": "2022-04-07",
+      "dateTime": "4/4/2022, 7:21:25 PM",
+      "isCompleted": false,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "title": "Birthdate Party",
+      "description": "Kennedy's Birthday Party",
+      "dueDate": "2022-04-29",
+      "isCompleted": false,
+      "dateTime": "4/6/2022, 5:30:07 PM",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "Vacation",
+      "description": "Visit Family and Backpack Europe",
+      "dueDate": "2022-07-01",
+      "isCompleted": false,
+      "dateTime": "4/6/2022, 5:35:36 PM",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "title": "Hackathon",
+      "description": "",
+      "dueDate": "2022-07-31",
+      "isCompleted": false,
+      "dateTime": "4/6/2022, 5:43:49 PM",
+      "id": 7
+    }
+  ],
+  "goals": [
+    {
+      "id": 1,
+      "userId": 1,
+      "projectId": 1,
+      "title": "Bathroom",
+      "isCompleted": false
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "projectId": 1,
+      "title": "Kitchen",
+      "isCompleted": false
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "projectId": 1,
+      "title": "Common Area",
+      "isCompleted": false
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "projectId": 2,
+      "title": "Store",
+      "isCompleted": false
+    },
+    {
+      "userId": 1,
+      "title": "Bake Birthday Cake",
+      "projectId": 5,
+      "dueDate": "2022-04-26",
+      "estTime": "35",
+      "dateTime": "4/6/2022, 5:31:43 PM",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "Party Supplies",
+      "projectId": 5,
+      "dueDate": "2022-04-15",
+      "estTime": "30",
+      "dateTime": "4/6/2022, 5:32:31 PM",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "title": "Invites",
+      "projectId": 5,
+      "dueDate": "2022-04-13",
+      "estTime": "60",
+      "dateTime": "4/6/2022, 5:33:33 PM",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "title": "Save for Tickets",
+      "projectId": 6,
+      "dueDate": "2022-05-06",
+      "estTime": "10",
+      "dateTime": "4/6/2022, 5:36:35 PM",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "title": "Save for Spending money",
+      "projectId": 6,
+      "dueDate": "2022-05-27",
+      "dateTime": "4/6/2022, 5:39:28 PM",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "title": "Vacation Clothes",
+      "projectId": 6,
+      "dueDate": "2022-05-27",
+      "dateTime": "4/6/2022, 5:40:02 PM",
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "title": "File a team",
+      "projectId": 7,
+      "dueDate": "2022-06-03",
+      "dateTime": "4/6/2022, 5:44:39 PM",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Buy Tickets",
+      "projectId": 7,
+      "dueDate": "2022-04-15",
+      "estTime": "5",
+      "dateTime": "4/6/2022, 5:46:16 PM",
+      "id": 12
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "goalId": 1,
+      "title": "This a title.",
+      "message": "This is a note. Hello World."
+    }
+  ]
+}
