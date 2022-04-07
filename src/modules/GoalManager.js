@@ -42,3 +42,13 @@ export const addGoal = (newGoal) => {
         body: JSON.stringify(newGoal)
     }).then(response => response.json())
 }
+
+export const getRandomId = (userId) => {
+  return fetch(`${remoteURL}/goals?userId=${userId}`)
+    .then(result => result.json())
+    .then(goals => {
+      const randomIndex = Math.floor(Math.random() * goals.length);
+      const randomGoal = goals[randomIndex];
+      return randomGoal.id;
+  });
+}

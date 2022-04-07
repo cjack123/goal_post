@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import { Timer } from "./Timer.js"
-import { Test } from "./test"
 import { HomeQueue } from "./HomeQueue"
+// import { HGoalQueue } from "./HGoalQueue"
 
 
 
@@ -19,7 +18,7 @@ export const Home = () => {
 
         <>
         <div className="buttons-home">
-            <section className="buttonCreateProject-home">
+            {/* <section className="buttonCreateProject-home">
                 <button type="button"
                     className="btn"
                     onClick={() => {navigate("/projects/create")}}>
@@ -32,10 +31,10 @@ export const Home = () => {
                     onClick={() => {navigate("/goals/create")}}>
                     Add New goal
                     </button>        
-                </section>
+                </section> */}
             </div>
         <HomeQueue />
-        <Timer />
+        {/* <HGoalQueue /> */}
         </>
     )
 

@@ -19,12 +19,25 @@ export const TimeWizard = () => {
     
     return (
         <>
-            <Navbar clearUser={clearUser} isAuthenticated={isAuthenticated} />
+            <div className="bgImage">
+            </div>
+
+            <Navbar clearUser={clearUser} isAuthenticated={isAuthenticated}
+                 />
             <ApplicationViews
             setAuthUser={setAuthUser}
             isAuthenticated={isAuthenticated}
             setIsAuthenticated={setIsAuthenticated}
-            />
+                />
+            <footer>
+                <div className="made">
+                    <p>Made by: NeiceyJai Studios</p>
+                    </div>
+                <div className="social">
+                    <p>Instagram:</p>
+                    </div>
+
+            </footer>
         </>
     )
     

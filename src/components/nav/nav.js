@@ -1,6 +1,6 @@
 import React from "react"
 import { Link, useNavigate } from "react-router-dom"
-// import "bootstrap/dist/css/bootstrap.min.css"
+import "./nav.css";
 
 export const Navbar = ({ clearUser, isAuthenticated }) => {
 
@@ -20,13 +20,23 @@ export const Navbar = ({ clearUser, isAuthenticated }) => {
                         </li>
 
 
+
                 <li className="nav-item">
                     <Link className="nav-link" to="/projects">Projects</Link>
                     </li>
 
-                <li className="nav-item">
+
+                <li className="navbar__item">
+                        <Link className="navbar__link" to="/projects/create">Add A Project</Link>
+                        </li>
+
+                <li className="navbar__item">
+                        <Link className="navbar__link" to="/goals/create">Add A Goal</Link>
+                        </li>
+
+                {/* <li className="nav-item">
                     <Link className="nav-link" to="/projects/:projectId/completed">Completed Projects</Link>
-                    </li>
+                    </li> */}
 
 
                 {isAuthenticated
