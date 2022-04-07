@@ -33,10 +33,10 @@ export const ProjectList = () => {
 
     
 
-    var checked = JSON.parse(localStorage.getItem('isCompleted'));
-    if (checked === true) {
-        document.getElementById("isCompleted").checked = true;
-    } 
+    // var checked = JSON.parse(localStorage.getItem('isCompleted'));
+    // if (checked === true) {
+    //     document.getElementById("isCompleted").checked = true;
+    // } 
 
 
     //.map() loops the projects api array displaying project cards' list

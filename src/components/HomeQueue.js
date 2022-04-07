@@ -17,11 +17,13 @@ export const HomeQueue = () => {
     return (
       <>
         <div className="header">
-        <h1>Start a Project!</h1>
+        <h1 className="top">Start a Project!</h1>
           </div>
-
-        <div className="queueCard">
+        <br></br>
+        <div className="bodyHome">
         <button onClick={refreshQueueProject}>Reload &#x27f3;</button>
+        <br></br>
+        <br></br>
           {queueId && <Queue projectId={queueId} />}
           </div>
       </>

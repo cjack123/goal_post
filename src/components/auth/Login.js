@@ -38,23 +38,23 @@ export const Login = ({setAuthUser}) => {
 
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Nashville Kennels</h1>
-                    <h2>Please sign in</h2>
+                    <h1>Goal Post</h1>
+                    {/* <h2>Please sign in</h2> */}
                     <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                        <label htmlFor="inputEmail"> Please sign in </label>
                         <input ref={email} type="email"
                             id="email"
                             className="form-control"
                             placeholder="Email address"
                             required autoFocus />
-                    </fieldset>
+                        </fieldset>
                     <fieldset>
                         <button type="submit">
                             Sign in
                         </button>
-                    </fieldset>
-                </form>
-            </section>
+                        </fieldset>
+                    </form>
+                </section>
             <section className="link--register">
                 <Link to="/register">Not a member yet?</Link>
             </section>

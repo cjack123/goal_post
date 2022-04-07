@@ -63,4 +63,4 @@ export const getRandomId = (userId) => {
         const randomProject = projects[randomIndex];
         return randomProject.id;
     });
-  }
+}
