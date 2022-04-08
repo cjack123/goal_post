@@ -4,7 +4,7 @@ import { getRandomId } from "../modules/ProjectManager";
 
 export const HomeQueue = () => {
     const [queueId, setQueueId] = useState(0);
-    const userId =JSON.parse(sessionStorage.getItem("TimeWizard_users")).id
+    const userId =JSON.parse(sessionStorage.getItem("TimeWizard_users"))
 
     const refreshQueueProject = () => {
       getRandomId(userId).then(setQueueId);

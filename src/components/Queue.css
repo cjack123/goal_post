@@ -17,7 +17,7 @@
 
 .queueCard {
     background-image: var(--gradient);
-    animation: qc-animation 12s infinite alternate;
+    animation: qc-animation 3s infinite alternate;
     background-size: 200%;
     border: 2px solid;
     border-color: black;   
@@ -32,7 +32,7 @@
 }
 
 .queueCard:hover {
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 1em rgba(80, 63, 205, 0.5);
     transition: 0.5s;
 }
 

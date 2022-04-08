@@ -1,0 +1,46 @@
+.tall {
+    display:flex;
+    justify-content: center;
+}
+
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #ff6f91,
+        #ff9671,
+        #ffc75f
+
+    );
+}
+
+/* main {
+    display:flex;
+    flex-wrap: wrap;
+} */
+
+.projectCard {
+    background-image: var(--gradient);
+    animation: qc-animation 12s infinite alternate;
+    background-size: 200%;
+    border: 2px solid;
+    border-color: black;   
+    box-shadow: rgba(80, 63, 205, 0.5) 0 0 3em ;
+    width: 50em;
+    height: 28em;
+    margin:7%
+}
+
+@keyframes qc-animation {
+    0% {background-position: left}
+    100% {background-position: right}
+}
+
+.projectCard:hover {
+    box-shadow: 0 0 1em rgba(80, 63, 205, 0.5);
+    transition: 0.5s;
+}
+
+.flexButton {
+    display: flex;
+    justify-content: space-evenly;
+}
