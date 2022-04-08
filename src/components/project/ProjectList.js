@@ -42,14 +42,15 @@ export const ProjectList = () => {
     //.map() loops the projects api array displaying project cards' list
     return (
         <>
-            <section className="section-content">
+            {/* <section className="section-content">
                 <button type="button"
                     className="btn"
                     onClick={() => {navigate("/projects/create")}}>
                     Add New Project
                     </button>
-            </section>
+            </section> */}
             <div className="container-cards">
+            <h1>My Projects</h1>
                 {projects.map(project =>
                     <ProjectCard 
                     key={project.id}

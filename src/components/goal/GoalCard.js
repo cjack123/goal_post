@@ -12,15 +12,16 @@ export const GoalCard = ({ goal, handleDeleteGoal }) => {
         <input id="completed" value="" type="checkbox" />
         <label>Complete</label>
         </div> */}
-    <div className="card">
-      <div className="card-content">
-        <h1>Test</h1>
-          <p>Goal :{goal.title}</p>
-          <p>Due Date: {goal.dueDate}</p>
-          <p> {goal.estTime} Minutes</p>
-        <button type="button" onClick={() => handleDeleteGoal(goal.id)}>Delete Goal</button>
+    <section className="call">
+      <div className="CardsFlex">
+        <div className="goalCard">
+            <h1 className="Qtitle">{goal.title}</h1>
+            <h2>Due Date: {goal.dueDate}</h2>
+            <h2> {goal.estTime} Minutes</h2>
+          <button type="button" onClick={() => handleDeleteGoal(goal.id)}>Delete Goal</button>
+          </div>
         </div>
-      </div>
+      </section>
       </>
       
   );

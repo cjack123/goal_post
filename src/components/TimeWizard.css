@@ -71,11 +71,12 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  box-shadow: rgba(80, 63, 205, 0.5) 0 5px 1px;
+
 }
 
 button:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 5px 1px;
+  box-shadow: #9400D3 0 1px 30px;
   transition-duration: .1s;
 }
 

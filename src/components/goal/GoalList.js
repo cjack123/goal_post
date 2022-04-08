@@ -44,13 +44,14 @@ export const GoalList = () => {
     //Now we use .map() to "loop over" the goals array to show a list of goal cards
     return (
         <>
-            <section className="section-content">
+            {/* <section className="section-content">
                 <button type="button"
                     className="btn"
                     onClick={() => {navigate("/goals/create")}}>
                     Add New goal
                     </button>
-            </section>
+            </section> */}
+             <h1>My Goals</h1>
             <div className="container-cards">
                 {goals.map(goal =>
                     <GoalCard 

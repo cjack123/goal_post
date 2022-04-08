@@ -4,7 +4,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 2px solid;
-    background-color: #a25ecf;
+    background-color: #CF5E8B;
     border-color: #FFDEAD
   }
   
@@ -22,5 +22,5 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: #a25ecf;
   }

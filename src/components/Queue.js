@@ -10,7 +10,7 @@ export const Queue = ({projectId}) => {
   
 
   useEffect(() => {
-    getProjectById(projectId).then(project => {
+    getProjectById(userId).then(project => {
       setProject(project);
     });
   }, [projectId]);

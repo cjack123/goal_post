@@ -87,6 +87,8 @@
       "id": 1,
       "userId": 1,
       "projectId": 1,
+      "estTime": "35",
+      "dueDate": "4/10/2022, 5:31:43 PM",
       "title": "Bathroom",
       "isCompleted": false
     },
@@ -94,6 +96,8 @@
       "id": 2,
       "userId": 1,
       "projectId": 1,
+      "estTime": "35",
+      "dueDate": "4/10/2022, 5:31:43 PM",
       "title": "Kitchen",
       "isCompleted": false
     },
@@ -101,6 +105,8 @@
       "id": 3,
       "userId": 1,
       "projectId": 1,
+      "estTime": "35",
+      "dueDate": "4/10/2022, 5:31:43 PM",
       "title": "Common Area",
       "isCompleted": false
     },
@@ -108,6 +114,8 @@
       "id": 4,
       "userId": 2,
       "projectId": 2,
+      "estTime": "35",
+      "dueDate": "4/10/2022, 5:31:43 PM",
       "title": "Store",
       "isCompleted": false
     },
