@@ -38,14 +38,14 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
 
                 <Route exact path="/projects" element={<PrivateRoute> <ProjectList /></PrivateRoute>} />
-                <Route path="/projects/create" element={<ProjectForm />} /> {/*Renders a form for projects. */}
+                <Route path="/projects/create" element={<PrivateRoute><ProjectForm /></PrivateRoute>} /> {/*Renders a form for projects. */}
                 <Route path="/projects/:projectId/edit" element={<PrivateRoute><ProjectEditForm /></PrivateRoute>} />
-                <Route exact path="/projects/:projectId/task" element={<ProjectTask />} />
+                <Route exact path="/projects/:projectId/task" element={<PrivateRoute><ProjectTask /></PrivateRoute>} />
                 {/* <Route exact path="/projects/:projectId/completed" element={<ProjectCompleted />} /> */}
 
                 <Route exact path="/goals" element={<GoalList />} />
-                <Route exact path="/goals" element={<GoalForm />} />
-                <Route path="/goals/create" element={<GoalForm />} />
+                {/* <Route exact path="/goals/:goalId/edit" element={<GoalEditForm />} /> */}
+                <Route path="/goals/create" element={<PrivateRoute><GoalForm /></PrivateRoute>} />
 
                 
             </Routes>

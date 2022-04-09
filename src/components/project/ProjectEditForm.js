@@ -4,7 +4,7 @@ import { getProjectById, updateProject  } from '../../modules/ProjectManager';
 
 export const ProjectEditForm = () => {
     const [project, setProject] = useState({ name: "", dueDate: "", description: "" });
-  const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
   const {projectId} = useParams();
   const navigate = useNavigate();
@@ -22,8 +22,8 @@ export const ProjectEditForm = () => {
     // This is an edit, so we need the id
     const editedProject = {
         id: projectId,
-        name: project.name,
-        location: project.location
+        dueDate: project.dueDate,
+        decription: project.description
     };
 
     updateProject(editedProject)
@@ -54,32 +54,39 @@ export const ProjectEditForm = () => {
                   className="formcontrol"
                   onChange={handleFieldChange}
                   id="name"
-                  value={project.name}
+                  value={project.title}
                   />
                 <br></br>
-                <label htmlFor="name">Due Date</label>
+                <label htmlFor="date">Due Date</label>
                 <br></br>
                 <input
-                type="date"
-                required
-                className="form-control"
-                onChange={handleFieldChange}
-                id="date"
-                value={project.dueDate}
-                />
+                    type="date"
+                    // required
+                    className="form-control"
+                    onChange={handleFieldChange}
+                    id="date"
+                    value={project.dueDate}
+                    />
                  <br></br>
-                <label htmlFor="name">Description</label>
+                <label htmlFor="text">Description</label>
                 <br></br>
                 <input
-                type="text"
-                required
-                className="form-control"
-                onChange={handleFieldChange}
-                id="date"
-                value={project.description}
-                />
+                    type="text"
+                    required
+                    className="form-control"
+                    onChange={handleFieldChange}
+                    id="text"
+                    value={project.description}
+                    />
+                    </div>
 
-              </div>
+                 <div className="alignRight">
+                    <button
+                    type="button" disabled={isLoading}
+                    onClick={updateExistingProject}
+                    className="btn btn-primary"
+                    >Submit</button>
+                    </div>
           </fieldset>
       </form>
       

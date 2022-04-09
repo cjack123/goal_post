@@ -29,6 +29,12 @@ export const Login = ({setAuthUser}) => {
             })
     }
 
+    const linkStyle = {
+        margin: "1rem",
+        // textDecoration: "none",
+        color: '#CF6A5E'
+      };
+
     return (
         <main className="container--login">
             <dialog className="dialog dialog--auth" ref={existDialog}>
@@ -56,7 +62,7 @@ export const Login = ({setAuthUser}) => {
                     </form>
                 </section>
             <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
+                <Link to="/register" style={linkStyle}>Not a member yet?</Link>
             </section>
         </main>
     )

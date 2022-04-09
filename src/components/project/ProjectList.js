@@ -49,8 +49,8 @@ export const ProjectList = () => {
                     Add New Project
                     </button>
             </section> */}
-            <div className="container-cards">
             <h1>My Projects</h1>
+            <div className="container-cards">
                 {projects.map(project =>
                     <ProjectCard 
                     key={project.id}

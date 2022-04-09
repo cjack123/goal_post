@@ -54,7 +54,7 @@ export const GoalForm = () => {
 		} else {
 			
 			addGoal(newGoal)
-				.then(() => navigate("/goals"))
+				.then(() => navigate("/projects"))
 		}
 	}
 
@@ -65,6 +65,21 @@ export const GoalForm = () => {
 
 			<section className="move">
             <h3 className="goalForm__title">New Goal Form</h3>
+			<fieldset>
+				<div className="form-group">
+					<label htmlFor="project">Assign to project: </label>
+					<select value={goal.projectId} name="project" id="projectId" onChange={handleControlledInputChange} className="form-control" >
+						<option value="0">Select a project</option>
+						{projects.map(project => (
+							<option key={project.id} value={project.id}>
+								{project.title}
+							</option>
+						))}
+					</select>
+				</div>
+			</fieldset>
+
+
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="title">Goal:</label>
@@ -87,20 +102,6 @@ export const GoalForm = () => {
 						</div>
 						</fieldset>
 
-
-            <fieldset>
-				<div className="form-group">
-					<label htmlFor="project">Assign to project: </label>
-					<select value={goal.projectId} name="project" id="projectId" onChange={handleControlledInputChange} className="form-control" >
-						<option value="0">Select a project</option>
-						{projects.map(project => (
-							<option key={project.id} value={project.id}>
-								{project.title}
-							</option>
-						))}
-					</select>
-				</div>
-			</fieldset>
 			<div className="glow">
             <button className="btn btn-primary"
 				onClick={handleClickSaveGoal}>Save Goal</button>
