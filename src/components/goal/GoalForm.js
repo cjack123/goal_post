@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addGoal } from '../../modules/GoalManager';
 import { getAllProjects } from '../../modules/ProjectManager';
-import './GoalForm.js'
+import './GoalForm.css'
 
 export const GoalForm = () => {
     // State will contain both goal data as well as an isLoading flag.
@@ -60,8 +60,10 @@ export const GoalForm = () => {
 
 
     return (
+
         <form className="GoalForm">
-            <h2 className="goalForm__title">New Goal</h2>
+			<section className="move">
+            <h3 className="goalForm__title">New Goal Form</h3>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="title">Goal:</label>
@@ -98,10 +100,13 @@ export const GoalForm = () => {
 					</select>
 				</div>
 			</fieldset>
+			<div className="glow">
             <button className="btn btn-primary"
 				onClick={handleClickSaveGoal}>
 				Save Goal
           </button>
+		  </div>
+		  </section>
         </form>
     )
 }

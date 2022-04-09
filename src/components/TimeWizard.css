@@ -21,10 +21,25 @@ h1 {
 
 }
 
-label, h2, section {
+h2 {
   color: #FFFFE0;
   font-family: URW Chancery L, cursive;
   /* font-size:40pt */
+}
+
+h3, label {
+  font-family: URW Chancery L, cursive;
+  color: #CF6A5E;
+}
+
+h3{
+  font-size: 50pt;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 25pt;
 }
 
 .link--register > a {
@@ -85,4 +100,3 @@ button:hover {
     padding: 0 2.6rem;
   }
 }
-

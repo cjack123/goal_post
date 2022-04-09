@@ -29,7 +29,7 @@ export const TimeWizard = () => {
             isAuthenticated={isAuthenticated}
             setIsAuthenticated={setIsAuthenticated}
                 />
-            <footer>
+            {/* <footer>
                 <div className="made">
                     <p>Made by: NeiceyJai Studios</p>
                     </div>
@@ -37,7 +37,7 @@ export const TimeWizard = () => {
                     <p>Instagram:</p>
                     </div>
 
-            </footer>
+            </footer> */}
         </>
     )
     
