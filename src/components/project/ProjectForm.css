@@ -1,4 +1,31 @@
-.project_header {
+/* .project_header {
     display: flex;
     justify-content: center;
+} */
+
+.projectForm {
+    /* width: 90%; */
+    /* height: 28em; */
+    display: flex;
+    justify-content: center;
+    margin-top:7%;
+    margin-bottom:30%;
+}
+
+.grove {
+    width: 40em;
+    height: 45em;
+    background-color: #ffc75f;
+    box-shadow: #9400D3 0 1px 30px;
+}
+
+.projectForm_header {
+    margin-bottom: 5%;
+}
+
+.snow {
+    display: flex;
+    justify-content: end;
+    margin-top: 3em;
+    margin-right: 1em;  
 }

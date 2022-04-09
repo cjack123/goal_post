@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addProject } from '../../modules/ProjectManager';
-import './ProjectForm.js'
+import './ProjectForm.css'
 
 //Problem: The input text autofills for all textboxes.
 //line 21
@@ -70,9 +70,8 @@ export const ProjectForm = () => {
     return (
         <>
         <form className="projectForm">
-
-			<section className="project_header">
-            <h3 className="projectForm_header">New Project</h3>
+			<section className="grove">
+            <h3 className="projectForm_header">New Project Form</h3>
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="text">Title</label>
@@ -88,11 +87,13 @@ export const ProjectForm = () => {
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="textarea">Description</label>
-							<input type="textarea" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="This paper is about how the Albert Bandura's behavior theory and Mary Ainsworth attachment theory are the greater indictors of personality." value={appProject.description} />
+							<input type="textarea" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Bandura's behavior theory is the is the best approach for learning." value={appProject.description} />
 							</div>
 							</fieldset>
+				<div className='snow'>
 				<button className="btn btn-primary"
 				onClick={handleClickSaveProject}>Save Project</button>
+					</div>
 				</section>
 	    </form>
         </>
