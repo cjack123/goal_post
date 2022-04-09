@@ -72,7 +72,7 @@ export const ProjectForm = () => {
         <form className="projectForm">
 
 			<section className="project_header">
-            <h2 className="projectForm_header">New Project</h2>
+            <h3 className="projectForm_header">New Project</h3>
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="text">Title</label>
