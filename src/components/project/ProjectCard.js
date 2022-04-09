@@ -25,7 +25,7 @@ export const ProjectCard = ({ project, handleDeleteProject }) => {
                         />
                     <div className="flexButton">
                         <Link to={`/projects/${project.id}/task`}><button>View Project Tasks</button></Link>
-                        <Link to={`/projects/${project.id}/edit`}><button>Edit Project</button></Link>
+                        {/* <Link to={`/projects/${project.id}/edit`}><button>Edit Project</button></Link> */}
                         <button type="button" onClick={() => handleDeleteProject(project.id)}>Delete Project</button>
                         </div>
                     </div>
