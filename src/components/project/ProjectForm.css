@@ -1,11 +1,6 @@
-/* .project_header {
-    display: flex;
-    justify-content: center;
-} */
 
 .projectForm {
-    /* width: 90%; */
-    /* height: 28em; */
+
     display: flex;
     justify-content: center;
     margin-top:7%;

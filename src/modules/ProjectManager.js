@@ -55,22 +55,22 @@ export const completedProject = (isCompleted) => {
   }).then(data => data.json());
 }
 
-export const getRandomId = () => {
-    return fetch(`${remoteURL}/projects`)
-      .then(result => result.json())
-      .then(projects => {
-        const randomIndex = Math.floor(Math.random() * projects.length);
-        const randomProject = projects[randomIndex];
-        return randomProject.id;
-    });
-}
-
-// export const getRandomId = (userId) => {
-//   return fetch(`${remoteURL}/projects?userId=${userId}`)
-//     .then(result => result.json())
-//     .then(projects => {
-//       const randomIndex = Math.floor(Math.random() * projects.length);
-//       const randomProject = projects[randomIndex];
-//       return randomProject.id;
-//   });
+// export const getRandomId = () => {
+//     return fetch(`${remoteURL}/projects`)
+//       .then(result => result.json())
+//       .then(projects => {
+//         const randomIndex = Math.floor(Math.random() * projects.length);
+//         const randomProject = projects[randomIndex];
+//         return randomProject.id;
+//     });
 // }
+
+export const getRandomId = (userId) => {
+  return fetch(`${remoteURL}/projects?userId=${userId}`)
+    .then(result => result.json())
+    .then(projects => {
+      const randomIndex = Math.floor(Math.random() * projects.length);
+      const randomProject = projects[randomIndex];
+      return randomProject.id;
+  });
+}

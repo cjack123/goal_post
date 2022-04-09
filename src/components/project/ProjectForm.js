@@ -70,6 +70,7 @@ export const ProjectForm = () => {
     return (
         <>
         <form className="projectForm">
+      
 			<section className="grove">
             <h3 className="projectForm_header">New Project Form</h3>
 				<fieldset>
@@ -78,21 +79,24 @@ export const ProjectForm = () => {
 							<input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="English Paper" value={appProject.title} />
 							</div>
 							</fieldset>
+
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="date">Due Date</label>
 							<input type="date" id="dueDate" onChange={handleControlledInputChange} required autoFocus className="form-control" value={appProject.dueDate} />
 							</div>
 							</fieldset>
+
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="textarea">Description</label>
 							<input type="textarea" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Bandura's behavior theory is the is the best approach for learning." value={appProject.description} />
 							</div>
 							</fieldset>
+
 				<div className='snow'>
-				<button className="btn btn-primary"
-				onClick={handleClickSaveProject}>Save Project</button>
+					<button className="btn btn-primary"
+					onClick={handleClickSaveProject}>Save Project</button>
 					</div>
 				</section>
 	    </form>
