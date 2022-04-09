@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { addProject } from '../../modules/ProjectManager';
-import './ProjectForm.js'
+import './ProjectForm.css'
 
 //Problem: The input text autofills for all textboxes.
 //line 21
@@ -71,7 +71,7 @@ export const ProjectForm = () => {
         <>
         <form className="projectForm">
 
-			<section className="project_header">
+		<section className="grove">
             <h3 className="projectForm_header">New Project</h3>
 				<fieldset>
 						<div className="form-group">
@@ -79,20 +79,25 @@ export const ProjectForm = () => {
 							<input type="text" id="title" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="English Paper" value={appProject.title} />
 							</div>
 							</fieldset>
+
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="date">Due Date</label>
 							<input type="date" id="dueDate" onChange={handleControlledInputChange} required autoFocus className="form-control" value={appProject.dueDate} />
 							</div>
 							</fieldset>
+
 				<fieldset>
 						<div className="form-group">
 							<label htmlFor="textarea">Description</label>
 							<input type="textarea" id="description" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="This paper is about how the Albert Bandura's behavior theory and Mary Ainsworth attachment theory are the greater indictors of personality." value={appProject.description} />
 							</div>
 							</fieldset>
-				<button className="btn btn-primary"
-				onClick={handleClickSaveProject}>Save Project</button>
+
+				<div className='snow'>
+					<button className="btn btn-primary"
+					onClick={handleClickSaveProject}>Save Project</button>
+					</div>
 				</section>
 	    </form>
         </>

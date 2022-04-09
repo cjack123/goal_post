@@ -6,11 +6,11 @@ import "./Queue.css";
 
 export const Queue = ({projectId}) => {
   const [project, setProject] = useState({});
-  const userId = JSON.parse(sessionStorage.getItem("TimeWizard_users")).id
+  // const userId = JSON.parse(sessionStorage.getItem("TimeWizard_users")).id
   
 
   useEffect(() => {
-    getProjectById(userId).then(project => {
+    getProjectById(projectId).then(project => {
       setProject(project);
     });
   }, [projectId]);

@@ -8,28 +8,13 @@ export const HomeQueue = () => {
     const userId =JSON.parse(sessionStorage.getItem("TimeWizard_users")).id
 
     const refreshQueueProject = () => {
-      getRandomId().then(setQueueId);
+      getRandomId(userId).then(setQueueId);
     };
   
     useEffect(() => {
       refreshQueueProject();
-    }, [queueId]);
+    }, []);
 
-    class Hello extends React.Component {
-      render() {
-        return <div>ProjectList</div>;
-      }
-    }
-    
-    class Help extends React.Component {
-    randomize(projects) {
-        return projects[Math.floor(Math.random() * projects.length)];
-    }
-      render() {
-        const project = [<ProjectList />]
-        return <div>Hello {this.randomize(project.id)}</div>;
-      }
-    }
   
     return (
       <>
@@ -77,4 +62,20 @@ export const HomeQueue = () => {
   //     </>
   //   );
   // };
+
+  // class Hello extends React.Component {
+  //   render() {
+  //     return <div>ProjectList</div>;
+  //   }
+  // }
+  
+  // class Help extends React.Component {
+  // randomize(projects) {
+  //     return projects[Math.floor(Math.random() * projects.length)];
+  // }
+  //   render() {
+  //     const project = [<ProjectList />]
+  //     return <div>Hello {this.randomize(project.id)}</div>;
+  //   }
+  // }
 

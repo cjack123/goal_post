@@ -62,6 +62,7 @@ export const GoalForm = () => {
     return (
 
         <form className="GoalForm">
+
 			<section className="move">
             <h3 className="goalForm__title">New Goal Form</h3>
             <fieldset>
@@ -102,10 +103,8 @@ export const GoalForm = () => {
 			</fieldset>
 			<div className="glow">
             <button className="btn btn-primary"
-				onClick={handleClickSaveGoal}>
-				Save Goal
-          </button>
-		  </div>
+				onClick={handleClickSaveGoal}>Save Goal</button>
+		  		</div>
 		  </section>
         </form>
     )
